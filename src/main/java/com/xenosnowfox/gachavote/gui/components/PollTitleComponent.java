@@ -31,11 +31,12 @@ public class PollTitleComponent extends Component {
 	 * Default constructor.
 	 */
 	public PollTitleComponent() {
+		final GridBagLayout layout = new GridBagLayout();
+		final GridBagConstraints layoutConstraints = new GridBagConstraints();
+
 		this.panel = new JPanel();
-		this.panel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
-		GridBagLayout layout = new GridBagLayout();
+		this.panel.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
 		this.panel.setLayout(layout);
-		GridBagConstraints layoutConstraints = new GridBagConstraints();
 
 		layoutConstraints.fill = GridBagConstraints.HORIZONTAL;
 		layoutConstraints.gridx = 0;
@@ -46,7 +47,7 @@ public class PollTitleComponent extends Component {
 		this.panel.add(label, layoutConstraints);
 
 		layoutConstraints.gridy = 1;
-		this.panel.add(Box.createRigidArea(new Dimension(0, 5)), layoutConstraints);
+		this.panel.add(Box.createRigidArea(new Dimension(0, 8)), layoutConstraints);
 
 		layoutConstraints.gridy = 2;
 		this.titleTextField = new JTextField();
