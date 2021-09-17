@@ -1,0 +1,60 @@
+{
+  "name": "gacha-vote",
+  "version": "1.0.0",
+  "description": "Gacha Vote",
+  "repository": "git+ssh://git@github.com:xenosnowfox/gacha-vote.git",
+  "private": true,
+  "keywords": [
+    "devops"
+  ],
+  "author": "Xeno Snow Fox",
+  "homepage": "https://github.com/XenoSnowFox",
+  "scripts": {
+    "build": "vue-cli-service build --mode development --no-clean --modern --inline-vue --target app --dest \"src/main/resources/webroot/\" \"src/main/vue/app.js\""
+  },
+  "dependencies": {
+    "@bugsnag/core": "^7.3.5",
+    "@bugsnag/js": "^7.4.0",
+    "@bugsnag/plugin-vue": "^7.3.5",
+    "ace-builds": "^1.4.12",
+    "date-fns": "^2.22.1",
+    "mount-vue-component": "^0.10.0",
+    "vue": "^3.0.0",
+    "vue-axios": "^3.0.1",
+    "vue-router": "^4.0.0-beta.13",
+    "vue3-ace-editor": "^2.0.2",
+    "vue3-click-away": "^1.2.1",
+    "vuex": "^4.0.0-beta.4"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.8",
+    "@vue/cli-plugin-eslint": "~4.5.8",
+    "@vue/cli-service": "~4.5.8",
+    "@vue/compiler-sfc": "^3.0.2",
+    "babel-eslint": "^10.1.0",
+    "core-js": "^3.6.5",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

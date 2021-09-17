@@ -1,18 +1,18 @@
-.gradle
+.classpath
+.settings
+.project
+.vscode
 .idea
-/build/
-/data/
-/src/main/java/scratch
-/src/test/java/scratch
+.sass-cache
+.gradle
+node_modules
 
-# Ignore Gradle GUI config
-gradle-app.setting
+*.iml
+**/*.log
+target/
+build/
+jar/
+data/
 
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
-
-# Cache of project
-.gradletasknamecache
-
-# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
-# gradle/wrapper/gradle-wrapper.properties
+src/main/resources/webroot/css/
+src/main/resources/webroot/js/
