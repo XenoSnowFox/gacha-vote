@@ -16,6 +16,7 @@ import java.util.List;
 @Getter
 @ToString
 public class TwitchIRCMessage {
+
 	/**
 	 * Returns an IRC Message from the raw string representation.
 	 *
@@ -75,4 +76,8 @@ public class TwitchIRCMessage {
 	 * Command arguments.
 	 */
 	private String[] arguments;
+
+	public boolean isPrivateMessage() {
+		return this.command.equalsIgnoreCase("PRIVMSG");
+	}
 }
